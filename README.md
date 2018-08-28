@@ -15,6 +15,7 @@ This romhack has a few commands you can do while playing:
 | Command | Description |
 | :---: | --- |
 | `Start+X` | Changes to the next game RNG (Random Number Generator) |
+| `Start+A` | Disable "Dark Room" |
 | `Start+Y` | Cicle player lives¹ |
 | `Start+B` | Cicle player hearts¹ |
 | `Start+Select` | Resets the current room² |
@@ -31,4 +32,5 @@ You may wanna also check the [wiki page](https://github.com/furious/gooftroop/wi
 Credits
 -------
 **FURiOUS**: Made this thing :P -- [Twitter](https://twitter.com/furious_) | [Twitch](http://twitch.tv/furious)
+
 **Vitor Vilela**: Helped a lot with some Assembly stuff -- [Twitter](https://twitter.com/hackervilela)

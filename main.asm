@@ -52,21 +52,25 @@ routine:
 	BNE .fix_audio
 	BIT #$40 ;X
 	BNE .change_rng
-	;BIT #$80 ;A
-	;BNE .cicle_hearts
+	BIT #$80 ;A
+	BNE .disable_darkroom
 	BRA .start_byetudlr
 
 ; ACTIONS AXLR
-.fix_audio ; fix audio (superufo)
+.fix_audio ; (superufo)
 	LDA $2142
 	STA $7FFF09
 	JMP return
 
-.change_rng ; random rng
+.change_rng
 	JSL $808859
 	JSR $9553
-	LDA !rng
-	STA !rng
+	;LDA !rng
+	;STA !last_rng
+	JMP return
+
+.disable_darkroom
+	JSR $A87F
 	JMP return
 
 
